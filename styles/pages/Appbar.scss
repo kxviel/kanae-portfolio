@@ -1,0 +1,29 @@
+@import "../constants/animations";
+@import "../constants/base";
+@import "../constants/mixins";
+@import "../constants/variables";
+@import "../constants/fonts";
+
+.my-appbar {
+  height: 14vh;
+  padding: 0 2vw 0 2vw;
+  .my-brand {
+    font-family: "Noto Serif JP", serif;
+    font-size: 2rem;
+    color: black;
+    font-size: 0;
+    line-height: 1.5;
+  }
+
+  .my-brand span {
+    font-size: 3rem;
+    animation: floatBrand 3s ease-in-out 0.7s infinite;
+  }
+
+  $elements: 0.5;
+  @for $i from 0 to 5 {
+    .my-brand span:nth-child(#{$i + 1}) {
+      animation-delay: #{$i + 1}s;
+    }
+  }
+}

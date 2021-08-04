@@ -1,0 +1,116 @@
+@import "../constants/animations";
+@import "../constants/base";
+@import "../constants/mixins";
+@import "../constants/variables";
+@import "../constants/fonts";
+
+.landing-root {
+  height: 95vh;
+  @include flexBox(column, none, center);
+  .my-dp {
+    background-color: aqua;
+    height: 17rem;
+    width: 17rem;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 0.7rem 0.14rem rgb(230, 230, 230);
+    background-image: url("../../public/Me3.jpg");
+    background-size: cover;
+    background-position: top;
+    &:hover {
+      box-shadow: 0 0 0.7rem 0.14rem #eec3c3;
+    }
+  }
+  .my-name {
+    margin-top: 3rem;
+    font-family: "Sacramento";
+    font-size: 5.3rem;
+    &:hover {
+      color: #e77f92;
+      cursor: pointer;
+    }
+  }
+  .my-title {
+    margin-top: 0.7rem;
+    font-size: 2.6rem;
+    &:hover {
+      color: #4e808d;
+      cursor: pointer;
+    }
+  }
+  .icon-grp {
+    margin-top: 1.9rem;
+    height: 21vh;
+    width: 50%;
+    @include flexBox(row, space-evenly, center);
+    transition: ease-in;
+    a:hover {
+      transform: translateY(-0.1rem);
+    }
+  }
+}
+// Media Queries===============================================
+
+@include respond(tab-land) {
+  // width < 1200?
+  .landing-root {
+    .my-dp {
+      height: 20rem;
+      width: 20rem;
+    }
+    .my-name {
+      font-size: 5.6rem;
+    }
+    .my-title {
+      font-size: 3rem;
+    }
+    .icon-grp {
+      height: 14vh;
+      width: 75%;
+    }
+  }
+}
+
+@include respond(tab-port) {
+  // width < 900?
+  .landing-root {
+    .my-dp {
+      height: 19rem;
+      width: 19rem;
+    }
+    .my-name {
+      font-size: 7.7rem;
+    }
+    .my-title {
+      font-size: 3rem;
+    }
+    .icon-grp {
+      height: 10vh;
+      width: 90%;
+    }
+  }
+}
+
+@include respond(phone) {
+  // width < 600?
+  .landing-root {
+    .my-dp {
+      height: 18rem;
+      width: 18rem;
+    }
+    .my-name {
+      font-size: 5rem;
+    }
+    .my-title {
+      font-size: 2.7rem;
+    }
+    .icon-grp {
+      height: 10vh;
+      width: 90%;
+      a > * {
+        height: 5rem;
+        width: 5rem;
+      }
+    }
+  }
+}
