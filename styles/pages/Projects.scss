@@ -24,6 +24,12 @@
       width: 49%;
       padding: 1.4rem;
       @include flexBox(column, space-evenly, center);
+      transition: all ease-in 0.1s;
+      & > h3 {
+        &:hover {
+          transform: translateY(-0.1rem);
+        }
+      }
       & > h1 {
         font-weight: bold;
         font-size: 3.5rem;

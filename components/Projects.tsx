@@ -110,7 +110,7 @@ const Projects = () => {
                     alt="First slide"
                     layout="fill"
                     objectPosition="center"
-                    objectFit="cover"
+                    objectFit="fill"
                   />
                 </div>
                 <div className="project-root__box__showcase__wrapper__side project-root__box__showcase__wrapper__side--back">
@@ -120,7 +120,7 @@ const Projects = () => {
                     alt="First slide"
                     layout="fill"
                     objectPosition="center"
-                    objectFit="cover"
+                    objectFit="fill"
                   />
                 </div>
               </div>
