@@ -1,6 +1,7 @@
 import Head from "next/head";
-import { Container } from "react-bootstrap";
+import Internships from "../components/Internships";
 import LandingPage from "../components/Landing";
+import Projects from "../components/Projects";
 
 export default function Home() {
   return (
@@ -10,6 +11,8 @@ export default function Home() {
         <link rel="icon" href="/Icon.png" />
       </Head>
       <LandingPage />
+      {/* <Internships /> */}
+      <Projects />
     </>
   );
 }

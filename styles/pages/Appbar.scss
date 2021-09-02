@@ -9,14 +9,11 @@
   padding: 0 2vw 0 2vw;
   .my-brand {
     font-family: "Noto Serif JP", serif;
-    font-size: 2rem;
     color: black;
-    font-size: 0;
-    line-height: 1.5;
   }
 
   .my-brand span {
-    font-size: 3rem;
+    font-size: 4.2rem;
     animation: floatBrand 3s ease-in-out 0.7s infinite;
   }
 
@@ -24,6 +21,37 @@
   @for $i from 0 to 5 {
     .my-brand span:nth-child(#{$i + 1}) {
       animation-delay: #{$i + 1}s;
+    }
+  }
+}
+
+// Media Queries===============================================
+
+@include respond(tab-land) {
+  // width < 1200?
+  .my-appbar {
+    .my-brand span {
+      font-size: 4rem;
+    }
+  }
+}
+
+@include respond(tab-port) {
+  // width < 900?
+  .my-appbar {
+    .my-brand span {
+      font-size: 4.4rem;
+    }
+  }
+}
+
+@include respond(phone) {
+  // width < 600?
+  .my-appbar {
+    @include flexBox(row, center, center);
+    margin-bottom: 4rem;
+    .my-brand span {
+      font-size: 4.7rem;
     }
   }
 }

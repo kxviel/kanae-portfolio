@@ -6,11 +6,11 @@ const Navbar = () => {
       <Row className="h-100 align-items-center justify-content-between">
         <Col sm={4}>
           <p className="my-brand">
-            <span>•</span>
+            <span>• </span>
             <span>か</span>
             <span>な</span>
             <span>え</span>
-            <span>•</span>
+            <span> •</span>
           </p>
         </Col>
       </Row>
