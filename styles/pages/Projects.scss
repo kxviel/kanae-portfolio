@@ -12,7 +12,10 @@
     width: 84vw;
     position: relative;
     transition: all 0.2s;
-
+    border: thin;
+    border-style: solid;
+    border-color: #d3d3d3;
+    border-radius: 2.1rem;
     &__content {
       bottom: 40%;
       left: 51%;
@@ -41,14 +44,9 @@
     &__stacks {
       top: 64%;
       position: absolute;
-      // background-color: palevioletred;
       height: 28vh;
       width: 100%;
       @include flexBox(row, space-evenly, center);
-      &_icon {
-        height: 100%;
-        width: 30%;
-      }
     }
     &__showcase {
       bottom: 49%;
@@ -67,6 +65,10 @@
           width: 100%;
           transition: all 2s ease;
           backface-visibility: hidden;
+          &--front {
+            width: 84%;
+            height: 84%;
+          }
           &--back {
             transform: rotateY(180deg);
           }

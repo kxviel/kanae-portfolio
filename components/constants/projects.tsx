@@ -16,6 +16,14 @@ export const projectList = [
     back: "/Cynefin2.png",
   },
   {
+    name: "Anzen Pay | Payment UI",
+    github: "https://github.com/kevkanae/anzen-pay",
+    link: "https://anzen-pay.vercel.app/",
+    tech: [""],
+    front: "/Pay1.png",
+    back: "/Pay2.png",
+  },
+  {
     name: "BloggerX",
     github: "https://github.com/kevkanae/BloggerWeb",
     link: "http://blogger-web.vercel.app/",
@@ -23,12 +31,4 @@ export const projectList = [
     front: "/Blogger1.png",
     back: "/Blogger2.png",
   },
-  // {
-  //   name: "Nasa | Astronomic Picture of the Day",
-  //   github: "https://github.com/kevkanae/nasa-apod-ReactJS",
-  //   link: "http://nasa-apod-react-js.vercel.app/",
-  //   tech: [""],
-  //   front: "/Havo1.png",
-  //   back: "/Havo2.png",
-  // },
 ];
