@@ -13,6 +13,8 @@ import {
   SiServerless,
   SiJson,
   SiStyledComponents,
+  SiGithub,
+  SiLivestream,
 } from "react-icons/si";
 import { projectList } from "./constants/projects";
 
@@ -31,11 +33,24 @@ const Projects = () => {
           >
             <div className="project-root__box__content">
               <h1>{data.name}</h1>
-              <h3>
-                <a href={data.github}>GitHub</a>
+              <h3
+                style={{
+                  backgroundColor: "black",
+                }}
+              >
+                <a
+                  style={{
+                    color: "white",
+                  }}
+                  href={data.github}
+                >
+                  <SiGithub /> GitHub
+                </a>
               </h3>
               <h3>
-                <a href={data.link}>Live Demo</a>
+                <a href={data.link}>
+                  <SiLivestream /> Live Demo
+                </a>
               </h3>
             </div>
             <div className="project-root__box__stacks">

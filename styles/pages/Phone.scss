@@ -1,0 +1,15 @@
+@import "../constants/animations";
+@import "../constants/base";
+@import "../constants/mixins";
+@import "../constants/variables";
+@import "../constants/fonts";
+
+.phone {
+  width: 100%;
+  background-color: black;
+  &__card {
+    width: 84%;
+    height: 21vh;
+    background-color: aqua;
+  }
+}

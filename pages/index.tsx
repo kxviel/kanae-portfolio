@@ -2,8 +2,13 @@ import Head from "next/head";
 import Internships from "../components/Internships";
 import LandingPage from "../components/Landing";
 import Projects from "../components/Projects";
+import { useMediaQuery } from "react-responsive";
+import PhoneProjects from "../components/Projects.Phone";
+import Footer from "../components/Footer";
 
 export default function Home() {
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 37.5em)" });
+
   return (
     <>
       <Head>
@@ -12,7 +17,9 @@ export default function Home() {
       </Head>
       <LandingPage />
       {/* <Internships /> */}
-      <Projects />
+      {!isTabletOrMobile && <Projects />}
+      {isTabletOrMobile && <PhoneProjects />}
+      <Footer />
     </>
   );
 }
