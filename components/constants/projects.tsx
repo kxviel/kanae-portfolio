@@ -21,7 +21,7 @@ export const projectList = [
     link: "http://blogger-web.vercel.app/",
     tech: [""],
     front: "/Blogger1.png",
-    back: "/Blogger1.png",
+    back: "/Blogger2.png",
   },
   // {
   //   name: "Nasa | Astronomic Picture of the Day",
