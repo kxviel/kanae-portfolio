@@ -1,0 +1,35 @@
+@import "../constants/animations";
+@import "../constants/base";
+@import "../constants/mixins";
+@import "../constants/variables";
+@import "../constants/fonts";
+
+.intern {
+  height: 50vh;
+  font-size: 2.1rem;
+  @include flexBox(column, space-evenly, center);
+  &__hr {
+    margin: 2.8rem 0;
+    height: 0.2rem;
+    width: 84%;
+  }
+  &__title {
+    text-align: center;
+    padding: 2.1rem 0;
+    font-weight: bolder;
+    font-size: 3.5rem;
+  }
+  &__item {
+    height: 50%;
+    width: 56%;
+    padding: 1.4rem;
+    @include flexBox(row, space-evenly, center);
+    &__img {
+      border-radius: 50%;
+      transition: all ease-in 0.1s;
+      &:hover {
+        transform: translateY(-0.2rem);
+      }
+    }
+  }
+}

@@ -8,13 +8,12 @@
   height: 95vh;
   @include flexBox(column, none, center);
   .my-dp {
-    background-color: aqua;
     height: 17rem;
     width: 17rem;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 0 0.7rem 0.14rem rgb(230, 230, 230);
-    background-image: url("../../public/Me3.jpg");
+    background-image: url("../../public/Me.png");
     background-size: cover;
     background-position: top;
     &:hover {
@@ -22,11 +21,14 @@
     }
   }
   .my-name {
-    margin-top: 3rem;
+    margin-top: 1.4rem;
     font-family: "Sacramento";
     font-size: 5.3rem;
-    &:hover {
+    & > span {
       color: #e77f92;
+    }
+    &:hover {
+      color: #8d3d49;
       cursor: pointer;
     }
   }
@@ -38,19 +40,22 @@
       cursor: pointer;
     }
   }
+  .extra {
+    font-family: "Tangerine", cursive;
+    font-size: 4.2rem;
+  }
   .icon-grp {
-    margin-top: 1.9rem;
-    height: 21vh;
+    height: 14vh;
     width: 50%;
     @include flexBox(row, space-evenly, center);
     transition: ease-in;
     a:hover {
-      transform: translateY(-0.1rem);
+      transform: translateY(-0.2rem);
     }
   }
 }
-// Media Queries===============================================
 
+// Media Queries===============================================
 @include respond(tab-land) {
   // width < 1200?
   .landing-root {

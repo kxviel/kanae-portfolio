@@ -1,0 +1,90 @@
+@import "../constants/animations";
+@import "../constants/base";
+@import "../constants/mixins";
+@import "../constants/variables";
+@import "../constants/fonts";
+.project-root {
+  @include flexBox(column, flex-end, center);
+  height: 100vh;
+  margin: 3rem 0;
+  &__box {
+    height: 77vh;
+    width: 84vw;
+    position: relative;
+    transition: all 0.2s;
+
+    &__content {
+      bottom: 40%;
+      left: 51%;
+      position: absolute;
+      height: 60%;
+      width: 49%;
+      padding: 1.4rem;
+      @include flexBox(column, space-evenly, center);
+      & > h1 {
+        font-weight: bold;
+        font-size: 3.5rem;
+        text-align: center;
+      }
+      & > h3 {
+        font-weight: bold;
+        background-color: gainsboro;
+        width: fit-content;
+        padding: 0.7rem;
+        border-radius: 2.1rem;
+        & > a {
+          color: black;
+          text-decoration: none;
+        }
+      }
+    }
+    &__stacks {
+      top: 64%;
+      position: absolute;
+      // background-color: palevioletred;
+      height: 28vh;
+      width: 100%;
+      @include flexBox(row, space-evenly, center);
+      &_icon {
+        height: 100%;
+        width: 30%;
+      }
+    }
+    &__showcase {
+      bottom: 49%;
+      right: 49%;
+      position: absolute;
+      perspective: 140rem;
+      &__wrapper {
+        position: relative;
+        height: 56vh;
+        width: 47vw;
+        &__side {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          transition: all 2s ease;
+          backface-visibility: hidden;
+          &--back {
+            transform: rotateY(180deg);
+          }
+        }
+        &:hover &__side--front {
+          transform: rotateY(-180deg);
+        }
+        &:hover &__side--back {
+          box-shadow: 0 1rem 1.4rem rgba(0, 0, 0, 0.16),
+            0 1rem 1.4rem rgba(0, 0, 0, 0.23);
+          transform: rotateY(0);
+        }
+      }
+
+      .responsive-iframe {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
