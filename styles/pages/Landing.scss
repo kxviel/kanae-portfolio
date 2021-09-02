@@ -119,3 +119,15 @@
     }
   }
 }
+
+.foot {
+  height: 21vh;
+  width: 100%;
+  padding: 1.4rem;
+  text-align: center;
+  font-weight: bold;
+  & > hr {
+    margin: 2.8rem;
+  }
+  // @include flexBox(column, space-evenly, center);
+}

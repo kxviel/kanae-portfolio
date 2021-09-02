@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <Container className="my-appbar" fluid>
       <Row className="h-100 align-items-center justify-content-between">
-        <Col sm={4}>
+        <Col>
           <p className="my-brand">
             <span>• </span>
             <span>か</span>
