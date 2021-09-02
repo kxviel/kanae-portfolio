@@ -19,6 +19,40 @@ import {
 import { projectList } from "./constants/projects";
 
 const Projects = () => {
+  const style = { height: "56px", width: "56px", margin: "0 3.5rem" };
+  const iconArray = [
+    [
+      <SiTypescript key="0" style={style} />,
+      <SiNextDotJs key="1" style={style} />,
+      <SiSass key="2" style={style} />,
+      <SiJson key="3" style={style} />,
+      <SiReact key="4" style={style} />,
+    ],
+    [
+      <SiTypescript key="0" style={style} />,
+      <SiNextDotJs key="1" style={style} />,
+      <SiSass key="2" style={style} />,
+      <SiFirebase key="3" style={style} />,
+      <SiBootstrap key="4" style={style} />,
+      <SiReact key="5" style={style} />,
+    ],
+    [
+      <SiTypescript key="0" style={style} />,
+      <SiNextDotJs key="1" style={style} />,
+      <SiSass key="2" style={style} />,
+      <SiReact key="3" style={style} />,
+    ],
+    [
+      <SiTypescript key="0" style={style} />,
+      <SiNextDotJs key="1" style={style} />,
+      <SiSass key="2" style={style} />,
+      <SiReact key="3" style={style} />,
+      <SiMongodb key="4" style={style} />,
+      <SiServerless key="5" style={style} />,
+      <SiBootstrap key="5" style={style} />,
+      <SiMaterialUi key="5" style={style} />,
+    ],
+  ];
   return (
     <>
       {projectList.map((data, index) => (
@@ -35,7 +69,7 @@ const Projects = () => {
               <h1>{data.name}</h1>
               <h3
                 style={{
-                  backgroundColor: "black",
+                  backgroundColor: "#282D4F",
                 }}
               >
                 <a
@@ -47,14 +81,25 @@ const Projects = () => {
                   <SiGithub /> GitHub
                 </a>
               </h3>
-              <h3>
-                <a href={data.link}>
+              <h3
+                style={{
+                  backgroundColor: "#548CA8",
+                }}
+              >
+                <a
+                  style={{
+                    color: "white",
+                  }}
+                  href={data.link}
+                >
                   <SiLivestream /> Live Demo
                 </a>
               </h3>
             </div>
             <div className="project-root__box__stacks">
-              {data.tech.map((x, i) => x)}
+              <div className="project-root__box__stacks__icon">
+                {iconArray[index]}
+              </div>
             </div>
             <div className="project-root__box__showcase">
               <div className="project-root__box__showcase__wrapper">
@@ -65,7 +110,7 @@ const Projects = () => {
                     alt="First slide"
                     layout="fill"
                     objectPosition="center"
-                    objectFit="cover"
+                    objectFit="fill"
                   />
                 </div>
                 <div className="project-root__box__showcase__wrapper__side project-root__box__showcase__wrapper__side--back">
@@ -75,7 +120,7 @@ const Projects = () => {
                     alt="First slide"
                     layout="fill"
                     objectPosition="center"
-                    objectFit="cover"
+                    objectFit="fill"
                   />
                 </div>
               </div>

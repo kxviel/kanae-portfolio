@@ -41,8 +41,12 @@
     }
   }
   .extra {
-    font-family: "Tangerine", cursive;
-    font-size: 4.2rem;
+    // font-family: "Tangerine", cursive;
+    font-size: 2.8rem;
+    &:hover {
+      color: #e77f92;
+      cursor: pointer;
+    }
   }
   .icon-grp {
     height: 14vh;
