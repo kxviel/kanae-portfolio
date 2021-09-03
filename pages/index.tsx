@@ -7,7 +7,7 @@ import PhoneProjects from "../components/Projects.Phone";
 import Footer from "../components/Footer";
 
 export default function Home() {
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 37.5em)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 684px)" });
 
   return (
     <>

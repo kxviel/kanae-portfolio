@@ -19,7 +19,7 @@ import {
 import { projectList } from "./constants/projects";
 
 const Projects = () => {
-  const style = { height: "56px", width: "56px", margin: "0 3.5rem" };
+  const style = { height: "49px", width: "49px", margin: "0 3.5rem" };
   const iconArray = [
     [
       <SiTypescript key="0" style={style} />,
@@ -46,11 +46,10 @@ const Projects = () => {
       <SiTypescript key="0" style={style} />,
       <SiNextDotJs key="1" style={style} />,
       <SiSass key="2" style={style} />,
-      <SiReact key="3" style={style} />,
-      <SiMongodb key="4" style={style} />,
-      <SiServerless key="5" style={style} />,
+      <SiMongodb key="3" style={style} />,
+      <SiServerless key="4" style={style} />,
       <SiBootstrap key="5" style={style} />,
-      <SiMaterialUi key="5" style={style} />,
+      <SiMaterialUi key="6" style={style} />,
     ],
   ];
   return (

@@ -6,10 +6,71 @@
 
 .phone {
   width: 100%;
-  background-color: black;
+  @include flexBox(column, space-evenly, center);
+  & > h3 {
+    text-align: center;
+    color: #777;
+  }
   &__card {
-    width: 84%;
-    height: 21vh;
-    background-color: aqua;
+    width: 70%;
+    height: 42vh;
+    margin: 1.4rem 0;
+
+    position: relative;
+    perspective: 140rem;
+    &__sides {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: white;
+      transition: all 1.4s ease-in-out;
+      backface-visibility: hidden;
+      &--front,
+      &--back {
+        height: 100%;
+        width: 100%;
+        box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.16),
+          0 0.2rem 0.4rem rgba(49, 33, 33, 0.23);
+      }
+      &--back {
+        background-image: url("../../public//bg.svg");
+        background-size: cover;
+        background-position: center;
+        transform: rotateY(180deg);
+        padding: 1.4rem;
+        @include flexBox(column, space-evenly, center);
+        & > h1 {
+          font-weight: bold;
+          font-size: 3.5rem;
+          text-align: center;
+        }
+        & > h3 {
+          font-weight: bold;
+          width: fit-content;
+          padding: 0.7rem;
+          border-radius: 2.1rem;
+          & > a {
+            color: black;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    &:hover &__sides--front {
+      transform: rotateY(-180deg);
+    }
+    &:hover &__sides--back {
+      box-shadow: 0 1rem 1.4rem rgba(0, 0, 0, 0.16),
+        0 1rem 1.4rem rgba(49, 33, 33, 0.23);
+      transform: rotateY(0);
+    }
+  }
+}
+
+@include respond(small-phone) {
+  .phone {
+    &__card {
+      width: 84%;
+    }
   }
 }
