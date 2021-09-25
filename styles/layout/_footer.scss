@@ -1,0 +1,23 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.foot {
+  height: 28vh;
+  width: 100vw;
+
+  margin-top: 7vh;
+  @include flex(column, space-evenly, center);
+  &__theme {
+    width: 14%;
+    height: 50%;
+
+    @include flex(row, space-around, center);
+  }
+  &__copyright {
+    width: 42%;
+    height: 50%;
+
+    font-size: 1.5rem;
+    @include flex(row, center, center);
+  }
+}
