@@ -36,7 +36,22 @@
 }
 
 @mixin glass {
-	background-color: #ffffff26;
 	backdrop-filter: blur(0.7rem);
 	box-shadow: 0 0.1rem 0.3rem #0000001f, 0 0.1rem 0.2rem #0000003d;
+}
+
+@keyframes nameEaseIn {
+	0% {
+		opacity: 0;
+		transform: translateX(-10rem);
+		color: #f06d85;
+	}
+	50% {
+		transform: translateX(1.4rem);
+		color: #ee3d5d;
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }

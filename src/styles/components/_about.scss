@@ -1,0 +1,53 @@
+@import '../abstract/mixins';
+
+.about {
+	height: 88vh;
+
+	background-image: url('/about.svg');
+	background-position: center;
+	background-size: cover;
+	@include flex(row, space-between, center);
+	&__typography {
+		padding: 1.4rem;
+		&__name {
+			font-size: 2.8rem;
+			font-weight: 500;
+			white-space: nowrap;
+			animation: nameEaseIn 3s ease-in-out 0.1s;
+		}
+		&__title {
+			font-size: 1.4rem;
+			font-weight: 500;
+			white-space: nowrap;
+			color: #ee3d5d;
+		}
+		&__quote {
+			margin-top: 0.7rem;
+			font-size: 1rem;
+			border-left: 0.4rem solid #ee3d5d;
+			text-indent: 1.4rem;
+			&::before {
+				content: '\201C';
+				color: #ee6d85;
+				font-size: 1.4rem;
+			}
+			&::after {
+				content: '\201D';
+				color: #ee6d85;
+				font-size: 1.4rem;
+			}
+		}
+	}
+	&__image {
+		object-fit: cover;
+		& > img {
+			max-width: 77%;
+			max-height: 77%;
+			border-radius: 50%;
+			transition: ease-in-out 0.2s;
+			&:hover {
+				transform: scale(1.15);
+			}
+		}
+	}
+}
