@@ -4,7 +4,6 @@
 	height: 12vh;
 	width: 100vw;
 	padding: 1.4rem 0.7rem 1.4rem 1rem;
-	position: sticky;
 	@include glass();
 	@include flex(row, space-between, center);
 	&__brand {

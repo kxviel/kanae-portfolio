@@ -3,7 +3,7 @@
 </script>
 
 <div class="nav">
-	<p class="nav__brand">Kevin</p>
+	<p class="nav__brand">K</p>
 	<div class="nav__icons">
 		{#each icons as icon}
 			<a href={icon.link}>
