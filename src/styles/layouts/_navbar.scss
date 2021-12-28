@@ -25,3 +25,45 @@
 		}
 	}
 }
+
+//  768 and Below ===================================================================================
+@include respond(768) {
+	.nav {
+		&__brand {
+			font-size: 2.5rem;
+		}
+		&__icons {
+			width: 25vw;
+			&__icon {
+				width: 1.8rem;
+				height: 1.8rem;
+			}
+		}
+	}
+}
+
+//  425 and Below ===================================================================================
+@include respond(425) {
+	.nav {
+		&__brand {
+			font-size: 2.4rem;
+		}
+		&__icons {
+			width: 42vw;
+		}
+	}
+}
+
+//  320 and Below ===================================================================================
+@include respond(320) {
+	.nav {
+		height: 21vh;
+		@include flex(column, space-evenly, center);
+		&__brand {
+			font-size: 2.4rem;
+		}
+		&__icons {
+			width: 100%;
+		}
+	}
+}

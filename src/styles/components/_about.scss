@@ -41,6 +41,7 @@
 	}
 	&__image {
 		object-fit: cover;
+		@include flex(row, center, center);
 		& > img {
 			max-width: 70%;
 			max-height: 70%;
@@ -48,6 +49,117 @@
 			transition: ease-in-out 0.2s;
 			&:hover {
 				transform: scale(1.15);
+			}
+		}
+	}
+}
+
+//  768 and Below ===================================================================================
+@include respond(768) {
+	.about {
+		padding: 1.8rem;
+		&__typography {
+			&__name {
+				font-size: 2.4rem;
+			}
+			&__title {
+				font-size: 1.5rem;
+			}
+			&__quote {
+				font-size: 0.85rem;
+				&::before {
+					font-size: 1.2rem;
+				}
+				&::after {
+					font-size: 1.2rem;
+				}
+			}
+		}
+		&__image {
+			& > img {
+				max-width: 65%;
+				max-height: 65%;
+			}
+		}
+	}
+}
+
+//  425 and Below ===================================================================================
+@include respond(425) {
+	.about {
+		height: 79vh;
+		padding: 4.2rem 1.2rem 7rem 1.2rem;
+		@include flex(column-reverse, space-around, center);
+		&__typography {
+			text-align: center;
+			&__name {
+				font-size: 2rem;
+			}
+			&__title {
+				font-size: 1.2rem;
+			}
+			&__quote {
+				margin-top: 0.4rem;
+				font-size: 0.85rem;
+				text-indent: 1.2rem;
+				&::before {
+					content: '\201C';
+					font-size: 1rem;
+				}
+				&::after {
+					content: '\201D';
+					font-size: 1rem;
+				}
+			}
+		}
+		&__image {
+			& > img {
+				max-width: 800%;
+				max-height: 80%;
+				border-radius: 50%;
+				&:hover {
+					transform: none;
+				}
+			}
+		}
+	}
+}
+
+//  320 and Below ===================================================================================
+@include respond(320) {
+	.about {
+		padding: 2rem;
+		@include flex(column-reverse, space-around, center);
+		&__typography {
+			text-align: center;
+			&__name {
+				font-size: 1.7rem;
+			}
+			&__title {
+				font-size: 1rem;
+			}
+			&__quote {
+				margin-top: 0.4rem;
+				font-size: 0.7rem;
+				text-indent: 1.2rem;
+				&::before {
+					content: '\201C';
+					font-size: 1rem;
+				}
+				&::after {
+					content: '\201D';
+					font-size: 1rem;
+				}
+			}
+		}
+		&__image {
+			& > img {
+				max-width: 85%;
+				max-height: 85%;
+				border-radius: 50%;
+				&:hover {
+					transform: none;
+				}
 			}
 		}
 	}
