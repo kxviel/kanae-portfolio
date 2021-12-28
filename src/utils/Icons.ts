@@ -9,8 +9,8 @@ export const icons = <IconTypes>[
 	},
 	{ src: '/icons/gmail.svg', alt: 'Email', link: 'mailto:kevkanae777@gmail.com' },
 	{
-		src: '/icons/leetcode.svg',
-		alt: 'LeetCode',
-		link: 'https://leetcode.com/Kanae-Sama/'
+		src: '/icons/twitter.svg',
+		alt: 'Twitter',
+		link: 'https://twitter.com/kevkanae'
 	}
 ];
