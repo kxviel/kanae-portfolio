@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { icons } from '../utils/Icons';
+	import { contactIcons } from '../utils/ContactIcons';
 </script>
 
 <div class="nav">
 	<p class="nav__brand">K</p>
 	<div class="nav__icons">
-		{#each icons as icon}
+		{#each contactIcons as icon}
 			<a href={icon.link}>
 				<img class="nav__icons__icon" src={icon.src} alt={icon.alt} />
 			</a>

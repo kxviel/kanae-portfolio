@@ -9,6 +9,16 @@
 	box-sizing: inherit;
 }
 
+html {
+	scroll-snap-type: mandatory;
+	scroll-snap-points-y: repeat(100vh);
+	scroll-snap-type: y mandatory;
+}
+
+section {
+	scroll-snap-align: start;
+}
+
 body {
 	font-family: 'Poppins', sans-serif;
 	line-height: 1.7;

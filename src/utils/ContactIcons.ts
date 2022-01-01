@@ -1,6 +1,6 @@
-import type { IconTypes } from 'src/services/IconTypes';
+import type { ContactIconTypes } from 'src/services/ContactIconTypes';
 
-export const icons = <IconTypes>[
+export const contactIcons = <ContactIconTypes>[
 	{ src: '/icons/github.svg', alt: 'GitHub', link: 'https://github.com/kevkanae' },
 	{
 		src: '/icons/linkedin.svg',

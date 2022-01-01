@@ -5,10 +5,10 @@
 	import Skills from '../components/Skills.svelte';
 </script>
 
-<div>
-	<div class="root">
-		<Navbar />
-		<About />
-	</div>
+<section class="root">
+	<Navbar />
+	<About />
+</section>
+<section>
 	<Skills />
-</div>
+</section>
