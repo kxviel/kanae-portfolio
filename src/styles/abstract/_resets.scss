@@ -14,4 +14,12 @@ body {
 	line-height: 1.7;
 	box-sizing: border-box;
 	background-color: #f9f7f6;
+	overflow-x: hidden;
+}
+
+.root {
+	height: 100vh;
+	background-image: url('/about.svg');
+	background-position: center;
+	background-size: cover;
 }
