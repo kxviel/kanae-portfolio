@@ -18,8 +18,20 @@ export const skillIcon = <SkillIconType>[
 		alt: 'Go'
 	},
 	{
+		src: '/skills/mongo.png',
+		alt: 'MongoDB'
+	},
+	{
 		src: '/skills/cpp.png',
 		alt: 'C++'
+	},
+	{
+		src: '/skills/github.png',
+		alt: 'GitHub'
+	},
+	{
+		src: '/skills/node.png',
+		alt: 'Nodejs'
 	},
 	{
 		src: '/skills/git.png',

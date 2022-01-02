@@ -2,14 +2,14 @@
 
 .skills {
 	width: 100%;
-	padding: 2.1rem;
+	padding: 1.4rem;
 	background-image: url('/CardBG.svg');
 	background-position: center;
 	background-size: cover;
 	&__title {
 		font-size: 2.8rem;
-		margin-bottom: 2.8rem;
-		margin-top: 2.8rem;
+		margin-bottom: 1rem;
+
 		font-weight: 500;
 		white-space: nowrap;
 		animation: nameEaseIn 3s ease-in-out 0.1s;
@@ -18,14 +18,18 @@
 		display: grid;
 		grid-template-columns: repeat(4, 2fr);
 		grid-template-rows: repeat(2, auto);
+		align-items: center;
 		row-gap: 2.8rem;
 		column-gap: 1.4rem;
 		&__icons {
-			border: 1px solid #ff58a64d;
+			border: 1px solid #ff58a69a;
 			border-radius: 0.5rem;
 			padding: 2.1rem;
 			@include glass();
 			@include flex(row, space-evenly, center);
+			&:hover {
+				box-shadow: 0 0.3rem 0.5rem #00000050;
+			}
 			& > img {
 				height: 3.5rem;
 				width: 3.5rem;
@@ -42,7 +46,7 @@
 //  768 and Below ===================================================================================
 @include respond(768) {
 	.skills {
-		padding: 1.8rem;
+		padding: 1.3rem;
 		&__title {
 			font-size: 2.2rem;
 			margin-bottom: 2.2rem;
@@ -71,7 +75,7 @@
 //  425 and Below  ===================================================================================
 @include respond(425) {
 	.skills {
-		padding: 1.8rem;
+		padding: 1.2rem;
 		&__title {
 			font-size: 2.2rem;
 			margin-bottom: 2.2rem;
@@ -108,10 +112,10 @@
 		&__grid {
 			grid-template-columns: repeat(2, auto);
 			grid-template-rows: repeat(2, auto);
-			row-gap: 2rem;
+			row-gap: 0.7rem;
 			column-gap: 0.6rem;
 			&__icons {
-				padding: 1rem;
+				padding: 0.5rem;
 				@include glass();
 				@include flex(row, space-evenly, center);
 				& > img {
