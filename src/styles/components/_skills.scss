@@ -3,7 +3,7 @@
 .skills {
 	width: 100%;
 	padding: 1.4rem;
-	background-image: url('/CardBG.svg');
+	background-image: url('https://ucarecdn.com/b47dff7a-ed80-4b2a-9f59-182a4439d0e5/CardBG.svg');
 	background-position: center;
 	background-size: cover;
 	&__title {
@@ -16,7 +16,7 @@
 	}
 	&__grid {
 		display: grid;
-		grid-template-columns: repeat(4, 2fr);
+		grid-template-columns: repeat(5, 2fr);
 		grid-template-rows: repeat(2, auto);
 		align-items: center;
 		row-gap: 2.8rem;
@@ -24,7 +24,7 @@
 		&__icons {
 			border: 1px solid #ff58a69a;
 			border-radius: 0.5rem;
-			padding: 2.1rem;
+			padding: 1.4rem;
 			@include glass();
 			@include flex(row, space-evenly, center);
 			&:hover {

@@ -1,15 +1,16 @@
-import type { ContactIconTypes } from 'src/services/ContactIconTypes';
+import { contactAssets } from '../assets/Contact';
+import type { ContactIconTypes } from '../interfaces/ContactIconTypes';
 
 export const contactIcons = <ContactIconTypes>[
-	{ src: '/icons/github.svg', alt: 'GitHub', link: 'https://github.com/kevkanae' },
+	{ src: contactAssets.github, alt: 'GitHub', link: 'https://github.com/kevkanae' },
 	{
-		src: '/icons/linkedin.svg',
+		src: contactAssets.linkedin,
 		alt: 'LinkedIn',
 		link: 'https://www.linkedin.com/in/kevkanae/'
 	},
-	{ src: '/icons/gmail.svg', alt: 'Email', link: 'mailto:kevkanae777@gmail.com' },
+	{ src: contactAssets.gmail, alt: 'Email', link: 'mailto:kevkanae777@gmail.com' },
 	{
-		src: '/icons/twitter.svg',
+		src: contactAssets.twitter,
 		alt: 'Twitter',
 		link: 'https://twitter.com/kevkanae'
 	}

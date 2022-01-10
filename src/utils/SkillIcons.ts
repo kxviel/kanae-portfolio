@@ -1,48 +1,57 @@
-import type { SkillIconType } from 'src/services/SkillIconTypes';
+import { skillAssets } from '../assets/Skills';
+import type { SkillIconType } from '../interfaces/SkillIconTypes';
 
 export const skillIcon = <SkillIconType>[
 	{
-		src: '/skills/react.png',
+		src: skillAssets.react,
 		alt: 'React'
 	},
 	{
-		src: '/skills/sass.png',
+		src: skillAssets.next,
+		alt: 'Next'
+	},
+	{
+		src: skillAssets.sass,
 		alt: 'SCSS'
 	},
 	{
-		src: '/skills/typescript.png',
+		src: skillAssets.ts,
 		alt: 'Typescript'
 	},
 	{
-		src: '/skills/golang.png',
-		alt: 'Go'
+		src: skillAssets.go,
+		alt: 'Golang'
 	},
 	{
 		src: '/skills/mongo.png',
 		alt: 'MongoDB'
 	},
 	{
-		src: '/skills/cpp.png',
+		src: skillAssets.cpp,
 		alt: 'C++'
 	},
 	{
-		src: '/skills/github.png',
+		src: skillAssets.github,
 		alt: 'GitHub'
 	},
 	{
-		src: '/skills/node.png',
+		src: skillAssets.firebase,
+		alt: 'Firebase'
+	},
+	{
+		src: skillAssets.node,
 		alt: 'Nodejs'
 	},
 	{
-		src: '/skills/git.png',
+		src: skillAssets.git,
 		alt: 'Git'
 	},
 	{
-		src: '/skills/js.png',
+		src: skillAssets.js,
 		alt: 'Javascript'
 	},
 	{
-		src: '/skills/python.png',
+		src: skillAssets.py,
 		alt: 'Python'
 	}
 ];
