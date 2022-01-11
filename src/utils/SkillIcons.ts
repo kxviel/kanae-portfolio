@@ -23,7 +23,7 @@ export const skillIcon = <SkillIconType>[
 		alt: 'Golang'
 	},
 	{
-		src: '/skills/mongo.png',
+		src: skillAssets.mongo,
 		alt: 'MongoDB'
 	},
 	{
