@@ -24,7 +24,6 @@
 		&__image {
 			height: 100%;
 			width: 50%;
-			// background-color: aqua;
 			object-fit: cover;
 			@include flex(column, center, center);
 			& > img {
@@ -61,7 +60,7 @@
 					text-decoration: none;
 					font-size: 1rem;
 					border-radius: 1.4rem;
-					background-color: #d8d5d5;
+					background-color: #e6e6e6;
 					color: #ee6d85;
 					padding: 0.5rem;
 					transition: all ease-in 0.1s;
@@ -137,6 +136,56 @@
 
 //  425 and Below  ===================================================================================
 @include respond(425) {
+	.projects {
+		padding: 0.7rem;
+		&__title {
+			font-size: 2.2rem;
+			margin-top: 1rem;
+		}
+		&__root {
+			@include flex(column-reverse, none, center);
+			width: 98vw;
+			height: 91vh;
+			margin-bottom: 2.8rem;
+			&__image {
+				width: 91%;
+				& > img {
+					width: 98%;
+					height: 98%;
+					&:active {
+						transform: scale(1.1);
+					}
+				}
+			}
+			&__desc {
+				width: 91%;
+				&__title {
+					font-size: 1.4rem;
+				}
+				&__subtitle {
+					font-size: 1rem;
+				}
+				&__link {
+					width: 63%;
+					& > a {
+						margin: 0.7rem 0 0.7rem 0;
+						font-size: 0.7rem;
+						border-radius: 1.4rem;
+						padding: 0.3rem;
+					}
+				}
+				&__icons {
+					object-fit: cover;
+					width: 100%;
+					@include flex(row, space-evenly, center);
+					& > img {
+						height: 1.9rem;
+						width: 1.9rem;
+					}
+				}
+			}
+		}
+	}
 }
 
 //  320 and Below  ===================================================================================
