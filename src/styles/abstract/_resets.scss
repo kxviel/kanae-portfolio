@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+// html {
+// 	scroll-snap-type: mandatory;
+// 	scroll-snap-points-y: repeat(100vh);
+// 	scroll-snap-type: y mandatory;
+// }
+
+// section {
+// 	scroll-snap-align: start;
+// }
+
+body {
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.7;
+	box-sizing: border-box;
+	background-color: #f9f7f6;
+	overflow-x: hidden;
+}
+
+.root {
+	height: 100vh;
+	background-image: url('https://ucarecdn.com/e130e2c6-e3ae-4086-9c65-8e643f892aba/about.svg');
+	background-position: center;
+	background-size: cover;
+}

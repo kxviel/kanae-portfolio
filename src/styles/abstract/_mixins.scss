@@ -1,0 +1,61 @@
+@mixin flex($direction, $justify, $align) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+@mixin respond($breakpoint) {
+	// 768 and Below
+	@if $breakpoint == 768 {
+		@media only screen and (max-width: 49em) {
+			@content;
+		}
+	}
+	// 425 and Below
+	@if $breakpoint == 425 {
+		@media only screen and (max-width: 27em) {
+			@content;
+		}
+	}
+	// 320 and Below
+	@if $breakpoint == 320 {
+		@media only screen and (max-width: 21em) {
+			@content;
+		}
+	}
+}
+
+@mixin absCenter {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin glass {
+	backdrop-filter: blur(0.3rem);
+	box-shadow: 0 0.1rem 0.3rem #0000001f, 0 0.1rem 0.2rem #0000003d;
+}
+
+@mixin gradientText($start, $end) {
+	background: -webkit-linear-gradient(77deg, $start, $end);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@keyframes nameEaseIn {
+	0% {
+		opacity: 0;
+		transform: translateX(-10rem);
+		color: #f06d85;
+	}
+	50% {
+		transform: translateX(1.4rem);
+		color: #ee3d5d;
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
