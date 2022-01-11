@@ -3,8 +3,16 @@
 .projects {
 	width: 100vw;
 	padding: 1.4rem;
-
 	@include flex(column, space-evenly, center);
+	&__more {
+		margin: 0.4rem 0 0.4rem 0;
+		text-decoration: none;
+		font-size: 1.4rem;
+		color: #ee6d85;
+		&:hover {
+			color: #fa395c;
+		}
+	}
 	&__title {
 		font-size: 2.8rem;
 		margin-top: 1rem;
@@ -88,6 +96,10 @@
 @include respond(768) {
 	.projects {
 		padding: 0.7rem;
+		&__more {
+			margin: 0;
+			font-size: 1rem;
+		}
 		&__title {
 			font-size: 2.2rem;
 			margin-top: 1rem;

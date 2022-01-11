@@ -25,4 +25,5 @@
 			</div>
 		</div>
 	{/each}
+	<a class="projects__more" href="https://github.com/kevkanae?tab=repositories">More Projects ➡️</a>
 </div>

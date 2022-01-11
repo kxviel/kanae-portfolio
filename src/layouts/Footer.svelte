@@ -1,4 +1,5 @@
-<div>
-	Icons made by <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from
-	<a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+<div class="footer">
+	<div class="footer__copyright">
+		<p>©{new Date().getFullYear()} Kevin D Goveas</p>
+	</div>
 </div>
