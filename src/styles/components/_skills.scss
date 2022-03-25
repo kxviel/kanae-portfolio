@@ -23,7 +23,7 @@
 		column-gap: 1.4rem;
 		&__icons {
 			border: 1px solid #ff58a69a;
-			border-radius: 0.5rem;
+			border-radius: 1.4rem;
 			padding: 1.4rem;
 			@include glass();
 			@include flex(row, space-evenly, center);

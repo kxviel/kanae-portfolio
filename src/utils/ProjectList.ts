@@ -8,8 +8,7 @@ export const projectList: ProjectListType = [
 		link: 'https://havo-weather-app.vercel.app/',
 		src: projectAssets.havo,
 		tech: [projectAssets.react, projectAssets.next, projectAssets.ts, projectAssets.sass],
-		desc: 'Sleek Weather Dashboard',
-		svg: '/cards/A.svg'
+		desc: 'Sleek Weather Dashboard'
 	},
 	{
 		name: 'Cynefin | Chat App',
@@ -23,8 +22,7 @@ export const projectList: ProjectListType = [
 			projectAssets.ts,
 			projectAssets.sass
 		],
-		desc: 'Safe & Fun Public Chat Room',
-		svg: '/cards/B.svg'
+		desc: 'Safe & Fun Public Chat Room'
 	},
 	{
 		name: 'Anzen Pay | Payment UI',
@@ -32,22 +30,6 @@ export const projectList: ProjectListType = [
 		link: 'https://anzen-pay.vercel.app/',
 		src: projectAssets.anzen,
 		tech: [projectAssets.react, projectAssets.next, projectAssets.ts, projectAssets.sass],
-		desc: 'Aesthetic Payment UI',
-		svg: '/cards/C.svg'
-	},
-	{
-		name: 'BloggerX',
-		github: 'https://github.com/kevkanae/BloggerWeb',
-		link: 'http://blogger-web.vercel.app/',
-		src: projectAssets.blog,
-		tech: [
-			projectAssets.react,
-			projectAssets.next,
-			projectAssets.ts,
-			projectAssets.mongo,
-			projectAssets.sass
-		],
-		desc: 'Research Paper Blogsite with a Serverless Backend',
-		svg: '/cards/D.svg'
+		desc: 'Aesthetic Payment UI'
 	}
 ];

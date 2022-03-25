@@ -5,5 +5,4 @@ export type ProjectListType = {
 	src: string;
 	tech: string[];
 	desc: string;
-	svg: string;
 }[];
