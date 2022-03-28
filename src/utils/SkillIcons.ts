@@ -18,26 +18,16 @@ export const skillIcon = <SkillIconType>[
 		src: skillAssets.ts,
 		alt: 'Typescript'
 	},
-	{
-		src: skillAssets.go,
-		alt: 'Golang'
-	},
+
 	{
 		src: skillAssets.mongo,
 		alt: 'MongoDB'
 	},
 	{
-		src: skillAssets.cpp,
-		alt: 'C++'
-	},
-	{
 		src: skillAssets.github,
 		alt: 'GitHub'
 	},
-	{
-		src: skillAssets.firebase,
-		alt: 'Firebase'
-	},
+
 	{
 		src: skillAssets.node,
 		alt: 'Nodejs'
@@ -51,7 +41,19 @@ export const skillIcon = <SkillIconType>[
 		alt: 'Javascript'
 	},
 	{
-		src: skillAssets.py,
-		alt: 'Python'
+		src: skillAssets.go,
+		alt: 'Golang'
 	}
+	// {
+	// 	src: skillAssets.firebase,
+	// 	alt: 'Firebase'
+	// },
+	// {
+	// 	src: skillAssets.cpp,
+	// 	alt: 'C++'
+	// },
+	// {
+	// 	src: skillAssets.py,
+	// 	alt: 'Python'
+	// }
 ];

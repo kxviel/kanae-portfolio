@@ -6,27 +6,16 @@
 *::before {
 	margin: 0;
 	padding: 0;
-	box-sizing: inherit;
+	box-sizing: border-box;
 }
 
 html {
 	scroll-behavior: smooth;
 }
 
-// html {
-// 	scroll-snap-type: mandatory;
-// 	scroll-snap-points-y: repeat(100vh);
-// 	scroll-snap-type: y mandatory;
-// }
-
-// section {
-// 	scroll-snap-align: start;
-// }
-
 body {
 	font-family: 'Poppins', sans-serif;
 	line-height: 1.7;
-	box-sizing: border-box;
 	background-color: #f9f7f6;
 	overflow-x: hidden;
 }

@@ -68,13 +68,13 @@
 					text-decoration: none;
 					font-size: 1rem;
 					border-radius: 1.4rem;
-					background-color: #e6e6e6;
-					color: #ee6d85;
+					background-color: #222222;
+					color: #fff;
 					padding: 0.5rem;
 					transition: all ease-in 0.1s;
 					&:hover {
-						background-color: #aaaaaa;
-						color: #ec5974;
+						background-color: #000;
+						color: #ffcad3;
 						transform: translateY(-0.1rem);
 					}
 				}
