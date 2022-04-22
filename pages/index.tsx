@@ -1,0 +1,8 @@
+import { NextPage } from "next";
+import Navbar from "../layout/Navbar";
+
+const Home: NextPage = () => {
+  return <Navbar />;
+};
+
+export default Home;

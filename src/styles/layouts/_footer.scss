@@ -1,8 +1,0 @@
-@import '../abstract/mixins';
-
-.footer {
-	width: 100vw;
-	height: 21vh;
-	padding: 1.4rem;
-	@include flex(column, space-between, center);
-}

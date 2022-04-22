@@ -1,3 +1,13 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+/* Scrollbar ==== */
 ::-webkit-scrollbar {
 	width: 0.7rem;
 	height: 0.7rem;
@@ -11,11 +21,9 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
 	background: #b8b8b8;
-	border-radius: 1.4rem;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	background: #929292;
-	border-radius: 1.4rem;
 }
