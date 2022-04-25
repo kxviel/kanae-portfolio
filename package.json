@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "start http://localhost:3000 && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -12,7 +12,9 @@
     "@chakra-ui/react": "^1.8.8",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
+    "@fontsource/my-soul": "^4.5.0",
     "@fontsource/poppins": "^4.5.5",
+    "@fontsource/raleway": "^4.5.5",
     "framer-motion": "^6",
     "next": "12.1.5",
     "react": "18.0.0",
